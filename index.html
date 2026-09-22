@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Year 7 PDHPE – Physical Fitness Components – Source-Aligned Lesson Guide</title>
+<style>
+:root{
+  --navy:#123a63;--blue:#1769aa;--pale:#eef6fc;--gold:#f4b942;
+  --green:#207a4b;--red:#a42b32;--ink:#17212b;--muted:#566574;
+  --line:#b8c7d4;--white:#fff;--shadow:0 3px 14px #17324d22
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#edf2f6}
+button,a{font:inherit}
+button{min-height:44px;border:2px solid var(--navy);border-radius:9px;padding:.55rem .85rem;background:white;color:var(--navy);font-weight:750;cursor:pointer;touch-action:manipulation}
+button:hover,button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.top{position:sticky;top:0;z-index:20;background:var(--navy);color:white;padding:.65rem max(1rem,calc((100% - 1120px)/2));box-shadow:var(--shadow)}
+.toprow{display:flex;gap:.55rem;align-items:center;flex-wrap:wrap}
+.brand{font-weight:850;margin-right:auto}
+.top button{border-color:white;color:white;background:#ffffff15}
+.top button[aria-pressed=true]{background:white;color:var(--navy)}
+main{max-width:1120px;margin:auto;padding:1rem}
+.hero,.card{background:white;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);margin:0 0 1rem;padding:1.15rem}
+.hero{background:linear-gradient(130deg,var(--navy),#245d8d);color:white}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.08;margin:.1rem 0 .5rem}
+.kicker{color:#ffdc7a;font-weight:850;letter-spacing:.04em;text-transform:uppercase}
+.meta{display:flex;gap:.5rem;flex-wrap:wrap}
+.pill{padding:.28rem .65rem;background:#ffffff20;border:1px solid #ffffff60;border-radius:999px}
+h2{color:var(--navy);margin:.1rem 0 .7rem;font-size:1.5rem}
+h3{color:var(--navy);margin:1rem 0 .35rem}
+h4{margin:.7rem 0 .2rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.student-facing{border:2px solid var(--blue);border-radius:10px;padding:.9rem;background:var(--pale)}
+.teacher{background:#f7f2ff;border-left:6px solid #744aaa;padding:.8rem 1rem;margin:.7rem 0}
+.answer{display:none;background:#effaf4;border:1px solid #7bbb97;border-radius:9px;padding:.75rem;margin:.45rem 0}
+.answer.open{display:block}
+.ansbtn{font-size:.92rem;margin:.25rem 0}
+.notice{border-left:6px solid var(--gold);background:#fff8e6;padding:.8rem 1rem;margin:.7rem 0}
+.critical{border-left-color:var(--red);background:#fff0f1}
+.ok{border-left-color:var(--green);background:#effaf4}
+table{width:100%;border-collapse:collapse;margin:.6rem 0}
+th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:.6rem}
+th{background:#dceaf5;color:var(--navy)}
+ol,ul{padding-left:1.45rem}
+.factgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}
+.fact{border:1px solid var(--line);border-radius:10px;padding:.8rem}
+.fact h4{color:var(--navy);margin:0}
+.tag{font-size:.8rem;font-weight:850;color:white;background:var(--green);border-radius:4px;padding:.1rem .35rem}
+.tag.skill{background:#7a3e92}
+.sourcebox{border:2px solid var(--gold);background:#fffdf4}
+.student-mode .teacher,
+.student-mode .teacher-only,
+.student-mode .answer,
+.student-mode .ansbtn{display:none!important}
+.student-mode .source-audit{display:none!important}
+.footer{text-align:center;color:var(--muted);padding:1rem}
+@media(max-width:760px){
+  body{font-size:16px}
+  .grid2,.factgrid{grid-template-columns:1fr}
+  .top{position:relative}
+}
+@media print{
+  .top,.ansbtn,.teacher-only,.source-audit{display:none!important}
+  body{background:white;font-size:11pt}
+  .hero,.card{box-shadow:none;break-inside:avoid;margin-bottom:8pt}
+  .answer{display:block!important}
+  main{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="toprow">
+    <div class="brand">Year 7 PDHPE · Lesson 7 <span id="modeLabel"></span></div>
+    <button id="teacherView" aria-pressed="true">Teacher view</button>
+    <button id="studentView" aria-pressed="false">Student view</button>
+    <button id="revealAll">Reveal all answers</button>
+    <button id="hideAll">Hide all answers</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="kicker">Balanced Lifestyle · Lesson #7</div>
+  <h1>Understanding Physical Fitness &amp; Its Components</h1>
+  <div class="meta">
+    <span class="pill">Year 7 PDHPE</span>
+    <span class="pill">Research + presentation lesson</span>
+    <span class="pill">Google Slides or Canva</span>
+    <span class="pill">Submit to Google Classroom</span>
+  </div>
+</section>
+
+<section class="card source-audit sourcebox">
+  <h2>Source-of-truth corrections applied</h2>
+  <ul>
+    <li><strong>Learning intention restored:</strong> “Explore healthy exercise habits, food choices and guidelines.”</li>
+    <li><strong>Success criterion restored:</strong> “Completes research activity and submits on Google Classroom.”</li>
+    <li>The lesson remains a <strong>research and presentation activity</strong>; it has not been replaced by an I Do / We Do / You Do lesson.</li>
+    <li>The original <strong>quick-question task</strong> has been restored.</li>
+    <li>The required component names match the source exactly.</li>
+    <li><strong>Picture or symbol is required</strong>, not optional.</li>
+    <li>The previously added “safe test + justification sentence” requirement has been removed. The source only requires an <strong>example of a test used to measure the component</strong>.</li>
+    <li>The added protected exit task and 50-minute hard stop have been removed because they are not in the source lesson.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <div class="grid2">
+    <div>
+      <h2>Learning intention</h2>
+      <p><strong>Explore healthy exercise habits, food choices and guidelines.</strong></p>
+    </div>
+    <div>
+      <h2>Success criteria</h2>
+      <p><strong>Completes research activity and submits on Google Classroom.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="card student-facing">
+  <h2>Student instructions</h2>
+  <p>Hi Year 7,</p>
+  <p>Apologies I am not in class today. Please complete the following research &amp; presentation activity below on your laptops using either <strong>Google Slides or Canva</strong>, and submit your completed presentation to the assignment on <strong>Google Classroom by the end of the lesson</strong>.</p>
+</section>
+
+<section class="card">
+  <h2>1. Quick questions</h2>
+  <div class="student-facing">
+    <p>In your Google Slides or Canva presentation, <strong>write these questions and answer them</strong>:</p>
+    <ol>
+      <li>What does <strong>physical fitness</strong> mean?</li>
+      <li>Why is fitness important for everyday life?</li>
+      <li>What types of fitness do you already know?</li>
+      <li>What sports need different types of fitness?</li>
+    </ol>
+  </div>
+
+  <div class="teacher">
+    <strong>Teacher support:</strong> These are introductory research questions. Do not replace them with a different retrieval task; they are part of the required student presentation.
+  </div>
+
+  <button class="ansbtn" aria-expanded="false">Show possible teacher answers</button>
+  <div class="answer">
+    <ol>
+      <li><strong>Physical fitness:</strong> being able to do physical activity and everyday tasks effectively without becoming tired too quickly.</li>
+      <li><strong>Importance:</strong> fitness can help people complete everyday activities, participate in sport and recreation, and support health and wellbeing.</li>
+      <li><strong>Possible types:</strong> cardiovascular endurance, muscular strength, muscular endurance, flexibility, agility, speed, coordination, balance, power and reaction time.</li>
+      <li><strong>Sports:</strong> different sports need different combinations. For example, soccer needs speed, agility, cardiovascular endurance and coordination.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="card">
+  <h2>2. Components of Fitness Mini-Lesson video</h2>
+  <div class="student-facing">
+    <p>Watch the <strong>Components of Fitness Mini-Lesson video</strong> from the original lesson link before completing the component slides.</p>
+  </div>
+  <div class="teacher">
+    <strong>Important:</strong> the screenshot identifies the video link but does not provide its URL here. Use the original lesson document or Google Classroom link. Do not substitute a different video unless directed.
+  </div>
+</section>
+
+<section class="card">
+  <h2>3. Complete the remaining slides</h2>
+  <div class="student-facing">
+    <h3>Layout: 11 boxes/slides</h3>
+    <p>The source states <strong>11 boxes/slides</strong>. The task contains four quick questions followed by ten fitness-component slides. A practical source-faithful layout is:</p>
+    <ul>
+      <li><strong>Slide 1:</strong> the four quick questions and answers</li>
+      <li><strong>Slides 2–11:</strong> one slide for each fitness component</li>
+    </ul>
+
+    <h3>Health-related components — 4 slides</h3>
+    <ul>
+      <li>Cardiovascular Endurance</li>
+      <li>Muscular Strength</li>
+      <li>Muscular Endurance</li>
+      <li>Flexibility</li>
+    </ul>
+
+    <h3>Skill-related components — 6 slides</h3>
+    <ul>
+      <li>Agility</li>
+      <li>Speed</li>
+      <li>Coordination</li>
+      <li>Balance</li>
+      <li>Power</li>
+      <li>Reaction Time</li>
+    </ul>
+
+    <h3>Each component slide must include</h3>
+    <ul>
+      <li>Component name</li>
+      <li>Student-friendly definition</li>
+      <li>Real-world example of a sport</li>
+      <li>Example of a test that is used to measure that component</li>
+      <li>Picture or symbol</li>
+    </ul>
+  </div>
+
+  <div class="teacher">
+    <strong>Do not add extra compulsory fields.</strong> The source does not require students to add a separate “why it fits” sentence, test justification, or safety explanation to every slide.
+  </div>
+</section>
+
+<section class="card teacher-only">
+  <h2>Teacher fact bank — support only</h2>
+  <p>This supports students who are stuck without changing the task requirements.</p>
+  <div class="factgrid">
+    <article class="fact">
+      <h4>Cardiovascular Endurance <span class="tag">HEALTH</span></h4>
+      <p><strong>Definition:</strong> ability of the heart and lungs to keep supplying oxygen during activity for a long time.</p>
+      <p><strong>Sport:</strong> distance running.</p>
+      <p><strong>Test:</strong> beep test.</p>
+    </article>
+    <article class="fact">
+      <h4>Muscular Strength <span class="tag">HEALTH</span></h4>
+      <p><strong>Definition:</strong> the amount of force a muscle or muscle group can produce.</p>
+      <p><strong>Sport:</strong> weightlifting.</p>
+      <p><strong>Test:</strong> handgrip dynamometer.</p>
+    </article>
+    <article class="fact">
+      <h4>Muscular Endurance <span class="tag">HEALTH</span></h4>
+      <p><strong>Definition:</strong> ability of muscles to keep working repeatedly over time.</p>
+      <p><strong>Sport:</strong> rowing.</p>
+      <p><strong>Test:</strong> timed wall sit or curl-up test.</p>
+    </article>
+    <article class="fact">
+      <h4>Flexibility <span class="tag">HEALTH</span></h4>
+      <p><strong>Definition:</strong> ability to move a joint through a wide range of movement.</p>
+      <p><strong>Sport:</strong> gymnastics.</p>
+      <p><strong>Test:</strong> sit-and-reach test.</p>
+    </article>
+    <article class="fact">
+      <h4>Agility <span class="tag skill">SKILL</span></h4>
+      <p><strong>Definition:</strong> ability to change direction quickly while staying in control.</p>
+      <p><strong>Sport:</strong> basketball.</p>
+      <p><strong>Test:</strong> Illinois agility test.</p>
+    </article>
+    <article class="fact">
+      <h4>Speed <span class="tag skill">SKILL</span></h4>
+      <p><strong>Definition:</strong> ability to move quickly.</p>
+      <p><strong>Sport:</strong> sprinting or soccer.</p>
+      <p><strong>Test:</strong> timed 20 m sprint.</p>
+    </article>
+    <article class="fact">
+      <h4>Coordination <span class="tag skill">SKILL</span></h4>
+      <p><strong>Definition:</strong> ability to use body parts together smoothly and accurately.</p>
+      <p><strong>Sport:</strong> tennis.</p>
+      <p><strong>Test:</strong> alternate-hand wall toss.</p>
+    </article>
+    <article class="fact">
+      <h4>Balance <span class="tag skill">SKILL</span></h4>
+      <p><strong>Definition:</strong> ability to stay stable while still or moving.</p>
+      <p><strong>Sport:</strong> gymnastics.</p>
+      <p><strong>Test:</strong> stork stand.</p>
+    </article>
+    <article class="fact">
+      <h4>Power <span class="tag skill">SKILL</span></h4>
+      <p><strong>Definition:</strong> ability to produce force quickly.</p>
+      <p><strong>Sport:</strong> volleyball jump.</p>
+      <p><strong>Test:</strong> standing broad jump.</p>
+    </article>
+    <article class="fact">
+      <h4>Reaction Time <span class="tag skill">SKILL</span></h4>
+      <p><strong>Definition:</strong> how quickly a person begins to respond to a signal or event.</p>
+      <p><strong>Sport:</strong> goalkeeper reacting to a shot.</p>
+      <p><strong>Test:</strong> ruler-drop test.</p>
+    </article>
+  </div>
+</section>
+
+<section class="card teacher-only">
+  <h2>Teacher prompts for students who are stuck</h2>
+  <table>
+    <thead><tr><th>Problem</th><th>Prompt</th></tr></thead>
+    <tbody>
+      <tr><td>Definition copied or too technical</td><td>“Can you explain that in words a Year 7 student would understand?”</td></tr>
+      <tr><td>Sport example missing</td><td>“Which sport clearly uses this component?”</td></tr>
+      <tr><td>Test confused with training</td><td>“Is that an activity used to measure the component, or an exercise used to improve it?”</td></tr>
+      <tr><td>Strength and endurance confused</td><td>“Is this about maximum force, or keeping the muscles working for longer?”</td></tr>
+      <tr><td>Speed and agility confused</td><td>“Is the athlete moving quickly in a straight line, or changing direction quickly?”</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>Resources</h2>
+  <ul>
+    <li>Balanced Lifestyle booklet</li>
+    <li>Exercise book</li>
+    <li>Laptop</li>
+    <li>Google Slides or Canva</li>
+    <li>Original Components of Fitness Mini-Lesson video link</li>
+    <li>Google Classroom assignment</li>
+  </ul>
+</section>
+
+<section class="card student-facing">
+  <h2>Homework / completion</h2>
+  <p><strong>Ensure all the work from today’s lesson is complete and submitted on Google Classroom.</strong></p>
+</section>
+
+<footer class="footer">Year 7 PDHPE · Balanced Lifestyle · Lesson 7 · Source-aligned teacher guide</footer>
+</main>
+
+<script>
+(()=>{'use strict';
+const qs=(s,r=document)=>r.querySelector(s),qsa=(s,r=document)=>[...r.querySelectorAll(s)];
+function view(student){
+  document.body.classList.toggle('student-mode',student);
+  qs('#studentView').setAttribute('aria-pressed',student);
+  qs('#teacherView').setAttribute('aria-pressed',!student);
+  qs('#modeLabel').textContent=student?'· STUDENT VIEW':'';
+}
+qsa('.ansbtn').forEach(b=>b.addEventListener('click',()=>{
+  const a=b.nextElementSibling;
+  if(!a)return;
+  const open=a.classList.toggle('open');
+  b.textContent=open?'Hide teacher answers':'Show possible teacher answers';
+  b.setAttribute('aria-expanded',open);
+}));
+qs('#studentView').addEventListener('click',()=>view(true));
+qs('#teacherView').addEventListener('click',()=>view(false));
+qs('#revealAll').addEventListener('click',()=>{
+  qsa('.answer').forEach(a=>a.classList.add('open'));
+  qsa('.ansbtn').forEach(b=>{b.textContent='Hide teacher answers';b.setAttribute('aria-expanded','true')});
+});
+qs('#hideAll').addEventListener('click',()=>{
+  qsa('.answer').forEach(a=>a.classList.remove('open'));
+  qsa('.ansbtn').forEach(b=>{b.textContent='Show possible teacher answers';b.setAttribute('aria-expanded','false')});
+});
+view(false);
+})();
+</script>
+</body>
+</html>
